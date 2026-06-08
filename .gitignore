@@ -1,0 +1,13 @@
+# Never commit local Claude Code settings — they often contain secrets
+# (API keys, host IPs) in permissions/env.
+settings.local.json
+**/settings.local.json
+
+# Editor / OS cruft
+.DS_Store
+.vscode/
+.idea/
+
+# Local AI-assistant scaffolding (not for the repo)
+CLAUDE.md
+.claude/
