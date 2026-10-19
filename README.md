@@ -1,5 +1,9 @@
 # claude-autoformat
 
+<p align="center">
+  <img src="docs/logo.svg" alt="claude-autoformat logo" width="128" />
+</p>
+
 Auto-format files the moment [Claude Code](https://github.com/anthropics/claude-code) edits them, with whatever formatter your project already uses.
 
 A single `PostToolUse` hook that runs after every `Write`/`Edit`. It looks at the edited file's extension and dispatches to the matching formatter. If that formatter is not installed, it silently does nothing, so it is safe to drop onto any machine and into any repo.
